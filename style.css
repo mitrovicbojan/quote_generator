@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body {
+    background: linear-gradient(-46deg, #04303d, #f77230,#3ea3f7, #f83022);
+     /***url(img/zid.png) no-repeat top center/cover;***/
+    width: 100%;
+    height: 100%;
+    background-size: 400% 400%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    animation:gradient 10s ease infinite;
+}
+
+@keyframes gradient {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+
+}
+
+.verse-wrap {
+    width: 350px;
+    height: 450px;
+    margin: 0 10px;
+}
+
+.verse-wrap .verse-heading {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+h1 {
+    font-weight: 700;
+    color: #06dcf6;
+    font-size: 50px;
+    text-shadow: 4px 2px #ffffff;
+    margin-top: 150px;;
+    
+}
+
+.verse-wrap .verse-body {
+    width: 100%;
+    height: 250px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    padding: 50px 35px;
+}
+
+.verse-wrap .verse-body .icon-quote {
+    text-align: center;
+    font-size: 18px;
+    height: 65px;
+    overflow: auto;
+}
+
+.verse-wrap .verse-body .author {
+    text-align: right;
+    margin-top: 15px;
+}
+
+.verse-wrap .verse-body .verse-buttons {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 12px;
+    border-top: 3px solid #06dcf6;
+    padding: 15px;
+}
+
+
+         button {background-image: linear-gradient(to right, #77A1D3 0%, #79CBCA  51%, #77A1D3  100%)}
+         button {
+            margin: 10px;
+            padding: 10px 25px;
+            text-align: center;
+            text-transform: uppercase;
+            transition: 0.5s;
+            background-size: 200% auto;
+            color: white;            
+            box-shadow: 0 0 20px #eee;
+            border-radius: 10px;
+            display: block;
+            cursor: pointer;
+          }
+
+          button:hover {
+            background-position: right center;
+            color: #fff;
+            text-decoration: none;
+              cursor: pointer;
+          }
+         
